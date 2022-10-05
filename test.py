@@ -1,2 +1,2 @@
-n = int(input())
-matrix = list(map(int, input().split()) for i in range(n))
+for i in range(3, 3):
+    print(i)

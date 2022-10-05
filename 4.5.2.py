@@ -5,7 +5,7 @@ for i in range(n):
     for j in row:
         if j > max:
             max = j
-            c = i
+            a = i
             b = row.index(j)
 
-print(c, b)
+print(a, b)

@@ -29,3 +29,5 @@ for i in range(n):
         break
 else:
     print('YES')
+# lst = map(int, open(0).read().split())
+# print(lst)

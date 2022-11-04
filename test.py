@@ -1,6 +1,8 @@
-n, m = set(input()), set(input())
-mask = {*range(10)}
-res = {*set(map(int,n)), *set(map(int,m))}
-print('YES' if mask == res else 'NO')
+letters = input().split()
 
-# Наполните множество set1 содержимым так, чтобы программа вывела {'p'}.
+for i in range(len(letters)):
+    counter = letters[:i].count(letters[i])
+    if counter:
+        print(f'{letters[i]}_{counter}', end=' ')
+    else:
+        print(letters[i], end=' ')

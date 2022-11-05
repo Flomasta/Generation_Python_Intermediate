@@ -4,6 +4,13 @@ student_grades = [86, 98, 89, 92, 45, 67, 89, 90, 100, 98, 10, 96, 93]
 
 result = [{student_ids[i]:{student_names[i]: student_grades[i]}} for i in range(len(student_ids))]
 
+
+# вариант решения через zip
+# result = [{x: {y: z}} for x, y, z in zip(student_ids, student_names, student_grades)]
+
+
+
+
 # Даны три списка student_ids, student_names, student_grades, содержащие информацию о студентах.
 #
 # Дополните приведенный код, используя генератор, так чтобы получить список result, содержащий вложенные словари в соответствии с образцом: [{'S001': {'Camila Rodriguez': 86}}, {'S002': {'Juan Cruz': 98}},...].

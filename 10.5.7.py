@@ -2,6 +2,10 @@ words = ['hello', 'bye', 'yes', 'no', 'python', 'apple', 'maybe', 'stepik', 'bee
 
 result = {i: [ord(j) for j in i ]for i in words}
 
+# вариант с map
+# result = {el: list(map(ord, el)) for el in words}
+
+
 # Дополните приведенный код, используя генератор, так, чтобы получить словарь result , в котором ключом будет строка – элемент списка words, а значением – список соответствующих кодов ASCII символов данной строки.
 #
 # Примечание 1. Если бы список words имел вид: words = ['yes', 'hello'], то результатом был бы словарь

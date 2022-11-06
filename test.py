@@ -1,9 +1,8 @@
-d = {}
-for _ in range(int(input())):
-    country, *cities = input().split()
-    d.update(dict.fromkeys(cities, country))
+from random import randrange
 
-print(d)
-
-
-#
+counter = 0
+i = randrange(256)
+while i != 0:
+    i = randrange(256)
+    counter += 1
+print(i, counter)

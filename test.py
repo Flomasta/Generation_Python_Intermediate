@@ -1,9 +1,10 @@
-def mean(*args):
-    res = [i for i in list(args) if type(i) == int or type(i) == float]
-    if len(res) > 0:
-        return sum(res) / len(res)
-    else:
-        return len(res)
+numbers = [-2, 45, 45, -7, -45, 37, -42, 27, -58, -58, -12, -27, -49, -27, -56, 4, -99, -11, 86]
 
-
-print(mean(1.5, True, ['stepik'], 'beegeek', 2.5))
+var1 = max(numbers, key=abs)
+var2 = min(map(abs, numbers))
+def map(function, items):
+    result = []
+    for item in items:
+        result.append(function(item))
+    return result
+print(var1 + var2)

@@ -1,10 +1,12 @@
-numbers = [-2, 45, 45, -7, -45, 37, -42, 27, -58, -58, -12, -27, -49, -27, -56, 4, -99, -11, 86]
+# put your python code here
+from functools import reduce
 
-var1 = max(numbers, key=abs)
-var2 = min(map(abs, numbers))
-def map(function, items):
-    result = []
-    for item in items:
-        result.append(function(item))
-    return result
-print(var1 + var2)
+
+def evaluate(coefficients, x):
+    coef = map(lambda c, ex, d: str((int(c)) * ex ** d), coefficients.split()[::-1], [int(x)] * len(coefficients),
+               range(0, len(coefficients)))
+    coef = reduce(lambda x, y: x + int(y), coef, 0)
+    return coef
+
+
+print(evaluate(input(),input()))

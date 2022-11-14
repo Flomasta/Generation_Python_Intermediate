@@ -17,7 +17,7 @@ with open('../txt_files_for_part_files_and_files_exam/cyrillic.txt', 'r', encodi
         else:
             lst.append(i)
     txt = ''.join(lst)
-with open('../transliteration.txt', 'w', encoding='utf-8') as transliteration:
+with open('../txt_files_for_part_files_and_files_exam/transliteration.txt', 'w', encoding='utf-8') as transliteration:
     transliteration.write(txt)
 
 # Транслитерация 🌶️

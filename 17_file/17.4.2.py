@@ -1,6 +1,6 @@
 from random import randrange
 
-with open('../random.txt', 'a', encoding='utf-8') as file:
+with open('../txt_files_for_part_files_and_files_exam/random.txt', 'a', encoding='utf-8') as file:
     for i in range(25):
         data = file.write(f'{randrange(111, 778)} \n')
 

@@ -1,4 +1,4 @@
-with open('../words.txt', 'r', encoding='utf-8') as file:
+with open('../txt_files_for_part_files_and_files_exam/words.txt', 'r', encoding='utf-8') as file:
     data = file.read().split()
     l = len(sorted(data, key=len)[-1])
     print(*filter(lambda x: len(x) == l, data), sep='\n')

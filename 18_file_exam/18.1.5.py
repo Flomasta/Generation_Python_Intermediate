@@ -1,4 +1,4 @@
-with open('../tst.txt', 'r', encoding='utf-8') as file:
+with open('../txt_files_for_part_files_and_files_exam/tst.txt', 'r', encoding='utf-8') as file:
     print(*map(str.strip, file.readlines()[-10:]), sep='\n')
 
 # Tail of a File

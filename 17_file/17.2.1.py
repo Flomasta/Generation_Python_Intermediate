@@ -1,4 +1,4 @@
-with open('../text.txt', encoding='utf-8') as file:
+with open('../txt_files_for_part_files_and_files_exam/text.txt', encoding='utf-8') as file:
     print(file.readline().strip()[::-1])
 
 # Переворот строки
